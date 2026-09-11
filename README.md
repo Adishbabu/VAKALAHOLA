@@ -32,7 +32,7 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1] (img1.png)
+![Screenshot1] <img src="img1.png">
 *home page*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
