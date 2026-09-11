@@ -1,1 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>VAKALAHOLA - Alien Language Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         LOADING SCREEN
+    =========================================== -->
+
+    <div id="loadingScreen">
+
+        <div class="space-loader">
+
+            <!-- Stars -->
+            <div class="loader-stars"></div>
+
+            <!-- UFO -->
+            <div class="ufo">
+                <div class="ufo-top"></div>
+                <div class="ufo-body"></div>
+                <div class="ufo-light"></div>
+            </div>
+
+            <!-- Falling Alien -->
+            <div class="falling-alien">
+                👽
+            </div>
+
+            <h2>Receiving alien transmission...</h2>
+
+            <div class="loading-line">
+                <div class="loading-progress"></div>
+            </div>
+
+            <p>Please remain on Earth.</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         MAIN WEBSITE
+    =========================================== -->
+
+    <div id="website">
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <div class="logo">
+                👽 <span>VAKALAHOLA</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#translator">Translator</a>
+                <a href="#alphabet">Alphabet</a>
+                <a href="#dictionary">Dictionary</a>
+                <a href="#names">Names</a>
+            </div>
+
+        </nav>
+
+
+        <!-- ======================================
+             HERO
+        ======================================= -->
+
+        <header class="hero">
+
+            <div class="planet planet-one"></div>
+            <div class="planet planet-two"></div>
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="hero-content">
+
+                <div class="signal">
+                    ◉ INCOMING TRANSMISSION
+                </div>
+
+                <p class="tiny-heading">
+                    EARTH ↔ UNKNOWN CIVILIZATION
+                </p>
+
+                <h1>
+                    Speak like an
+                    <span>Alien.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Translate English, create alien words,
+                    discover strange names and send secret messages.
+                </p>
+
+                <a href="#translator" class="primary-button">
+                    ENTER VAKALAHOLA →
+                </a>
+
+            </div>
+
+            <div class="floating-alien">
+                👽
+            </div>
+
+            <div class="floating-planet">
+                🪐
+            </div>
+
+            <div class="scroll-note">
+                ↓ Explore the alien language
+            </div>
+
+        </header>
+
+
+        <!-- ======================================
+             TRANSLATOR
+        ======================================= -->
+
+        <section id="translator" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-number">01</span>
+
+                <h2>Alien Translator</h2>
+
+                <p>
+                    Type an English sentence and translate it
+                    into the VAKALAHOLA language.
+                </p>
+
+            </div>
+
+            <div class="translator-card">
+
+                <div class="language-box">
+
+                    <label>ENGLISH</label>
+
+                    <textarea
+                        id="englishInput"
+                        placeholder="Example: Hello my friend..."
+                    ></textarea>
+
+                </div>
+
+                <button
+                    class="primary-button translate-button"
+                    onclick="translateText()"
+                >
+                    TRANSLATE 👽
+                </button>
+
+                <div class="language-box">
+
+                    <label>VAKALAHOLA</label>
+
+                    <div id="alienOutput" class="output-box">
+                        Your alien translation will appear here...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             ALIEN LANGUAGE GENERATOR
+        ======================================= -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">02</span>
+
+                <h2>Alien Language Generator</h2>
+
+                <p>
+                    Generate a completely random alien sentence.
+                </p>
+
+            </div>
+
+            <div class="generator-card">
+
+                <div class="alien-symbol">
+                    ☄
+                </div>
+
+                <div id="generatedLanguage" class="alien-sentence">
+                    Vora Nalu Xuun...
+                </div>
+
+                <p class="translation-hint">
+                    "The stars are watching..."
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="generateAlienLanguage()"
+                >
+                    GENERATE PHRASE
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             ALIEN ALPHABET
+        ======================================= -->
+
+        <section id="alphabet" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-number">03</span>
+
+                <h2>Alien Alphabet</h2>
+
+                <p>
+                    Transform ordinary English letters into
+                    mysterious alien symbols.
+                </p>
+
+            </div>
+
+            <div class="alphabet-card">
+
+                <input
+                    type="text"
+                    id="alphabetInput"
+                    placeholder="Type a word..."
+                >
+
+                <button
+                    class="primary-button"
+                    onclick="generateAlphabet()"
+                >
+                    CONVERT
+                </button>
+
+                <div id="alphabetOutput" class="symbol-output">
+                    Ξ Ø И ∆
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             DICTIONARY
+        ======================================= -->
+
+        <section id="dictionary" class="section dark-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">04</span>
+
+                <h2>Alien Dictionary</h2>
+
+                <p>
+                    A small collection of words from the
+                    fictional XenoLang language.
+                </p>
+
+            </div>
+
+            <div
+                id="dictionaryContainer"
+                class="dictionary-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- ======================================
+             ALIEN NAME GENERATOR
+        ======================================= -->
+
+        <section id="names" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-number">05</span>
+
+                <h2>Alien Name Generator</h2>
+
+                <p>
+                    Discover what your name might sound like
+                    on another planet.
+                </p>
+
+            </div>
+
+            <div class="name-card">
+
+                <input
+                    id="nameInput"
+                    type="text"
+                    placeholder="Enter your name..."
+                >
+
+                <button
+                    class="primary-button"
+                    onclick="generateAlienName()"
+                >
+                    CREATE MY ALIEN NAME
+                </button>
+
+                <div
+                    id="alienNameOutput"
+                    class="alien-name-output"
+                >
+                    Vora'Xen
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             SECRET MESSAGE
+        ======================================= -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">06</span>
+
+                <h2>Secret Message</h2>
+
+                <p>
+                    Encode a message using the VAKALAHOLA alphabet.
+                </p>
+
+            </div>
+
+            <div class="secret-card">
+
+                <textarea
+                    id="secretInput"
+                    placeholder="Type your secret message..."
+                ></textarea>
+
+                <button
+                    class="primary-button"
+                    onclick="generateSecretMessage()"
+                >
+                    ENCODE MESSAGE 🔐
+                </button>
+
+                <div
+                    id="secretOutput"
+                    class="secret-output"
+                >
+                    Your encrypted alien message will appear here.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             FOOTER
+        ======================================= -->
+
+        <footer>
+
+            <div class="footer-logo">
+                👽 VAKALAHOLA
+            </div>
+
+            <p>
+                A tiny language laboratory from somewhere beyond Earth.
+            </p>
+
+            <small>
+                No actual aliens were contacted.
+            </small>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
