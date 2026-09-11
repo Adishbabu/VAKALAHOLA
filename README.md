@@ -68,16 +68,15 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+<video src="demo.mp4" controls></video>
 *This is a website which helps to translate english into alien language*
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Anuvind Raghunath: Idea contribution and helping in implimentation
+- Adish Babu: Implimentation and helping for creating idea
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
