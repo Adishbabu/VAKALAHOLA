@@ -35,14 +35,14 @@ For Software:
 ![Screenshot1] <img src="img1.png">
 *home page*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2] <img src="img2.png">
+*Alien translator*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3] <img src="img3.png">
+*Alien alphabet*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot4] <img src="img4.png">
+*Alien dictionary*
    
 # Diagrams
 👽 VAKALAHOLA
