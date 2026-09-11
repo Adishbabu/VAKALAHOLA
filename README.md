@@ -45,33 +45,26 @@ For Software:
 *Add caption explaining what this shows*
    
 # Diagrams
-!🛸 VAKALAHOLA
-       ↓
-Alien falling from UFO
-       ↓
-"Receiving transmission..."
-       ↓
 👽 VAKALAHOLA
-       ↓
-┌──────────────────────────────┐
-│       ALIEN TRANSLATOR       │
-│                              │
-│ English → Alien              │
-└──────────────┬───────────────┘
-               ↓
-      Alien Translation
-               ↓
-   ┌───────────┼───────────┐
-   ↓           ↓           ↓
-Alphabet   Dictionary   Alien Name
-Generator               Generator
-   ↓           ↓           ↓
-   └───────────┼───────────┘
-               ↓
-       Secret Message
-               ↓
-      Copy / Share Result(Add your workflow/architecture diagram here)
-*VAKALAHOLA takes your English message, transforms it into an alien language, and lets you explore alien words, names, symbols, and secret messages*
+      │
+      ▼
+[ English Message ]
+      │
+      ▼
+[ Alien Translator ]
+      │
+      ▼
+[ Alien Translation ]
+      │
+      ├── [ Alphabet Generator ]
+      ├── [ Alien Dictionary ]
+      ├── [ Name Generator ]
+      │
+      ▼
+[ Secret Message ]
+      │
+      ▼
+[ Copy / Share ]
 
 ### Project Demo
 # Video
