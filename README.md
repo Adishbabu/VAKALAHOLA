@@ -68,7 +68,11 @@ For Software:
 
 ### Project Demo
 # Video
-<video src="demo.mp4" controls></video>
+
+
+https://github.com/user-attachments/assets/b48c90a4-b253-4a98-b339-9e975409d05e
+
+
 *This is a website which helps to translate english into alien language*
 
 # Additional Demos
